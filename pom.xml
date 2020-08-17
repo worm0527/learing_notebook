@@ -9,6 +9,7 @@
     <module>notebook-bytecode</module>
     <module>notebook-guava</module>
     <module>notebook-guice</module>
+    <module>notebook-shardingjdbc</module>
   </modules>
   <parent>
     <groupId>org.springframework.boot</groupId>
