@@ -3,7 +3,7 @@ package com.xsy.notebook.array;
 /**
  * 实现数组的增删改查
  *
- * @author shuyuan.xu, <shuyuan.xu@leyantech.com>
+ * @author shuyuan.xu
  * @date 2020-06-26.
  */
 public class Array {

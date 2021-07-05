@@ -1,7 +1,7 @@
 package com.xsy.notebook.array;
 
 /**
- * @author shuyuan.xu, <shuyuan.xu@leyantech.com>
+ * @author shuyuan.xu
  * @date 2020-06-26.
  */
 public class GenericsArray<T> implements AbstractArray<T> {

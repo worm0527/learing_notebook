@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.lang.reflect.Field;
 
 /**
- * @author shuyuan.xu, <shuyuan.xu@leyantech.com>
+ * @author shuyuan.xu
  * @date 2020-07-15.
  */
 public class GenerateClass {

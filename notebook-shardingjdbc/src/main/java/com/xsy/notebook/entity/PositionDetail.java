@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * @author shuyuan.xu, <shuyuan.xu@leyantech.com>
+ * @author shuyuan.xu
  * @date 2020-08-17.
  */
 @Entity

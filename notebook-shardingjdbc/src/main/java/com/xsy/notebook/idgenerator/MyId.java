@@ -6,7 +6,7 @@ import org.apache.shardingsphere.spi.keygen.ShardingKeyGenerator;
 import java.util.Properties;
 
 /**
- * @author shuyuan.xu, <shuyuan.xu@leyantech.com>
+ * @author shuyuan.xu
  * @date 2020-08-17.
  */
 public class MyId implements ShardingKeyGenerator {

@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * 单向链表
  *
- * @author shuyuan.xu, <shuyuan.xu@leyantech.com>
+ * @author shuyuan.xu
  * @date 2020-07-25.
  */
 public class MyLinkedList<T> implements AbstractArray<T> {

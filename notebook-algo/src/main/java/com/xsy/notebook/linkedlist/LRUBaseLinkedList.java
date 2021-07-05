@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * 基于链表的LRU Cache
  *
- * @author shuyuan.xu, <shuyuan.xu@leyantech.com>
+ * @author shuyuan.xu
  * @date 2020-07-05.
  */
 public class LRUBaseLinkedList<T> {
@@ -110,13 +110,13 @@ public class LRUBaseLinkedList<T> {
   }
 
   public static void main(String[] args) {
-    LRUBaseLinkedList<String> lurCache = new LRUBaseLinkedList<>();
+    LRUBaseLinkedList<String> lruCache = new LRUBaseLinkedList<>();
     Scanner scanner = new Scanner(System.in);
     while (true) {
       String in = scanner.next();
       System.out.println(in);
-      lurCache.add(in);
-      lurCache.printAll();
+      lruCache.add(in);
+      lruCache.printAll();
     }
   }
 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<script>
+  var socket;
+  if (!window.WebSocket) {
+    window.WebSocket = window.MozWebSocket;
+  }
+  if (!window.WebSocket) {
+    alert("Your browser does not support Web Socket.");
+  }
+  socket = new WebSocket("ws://127.0.0.1:8080/ws/socket");
+  socket.onopen = function (event) {
+    console.log(event);
+    console.log("socket open");
+  }
+  socket.onmessage = function (event) {
+    console.log(event);
+    console.log("socket get msg")
+  }
+  socket.onclose = function (event) {
+    console.log(event);
+    console.log("socket is close")
+  }
+  socket.onerror = function (event) {
+    console.error(event)
+  }
+
+  function send() {
+    socket.send("hello");
+  }
+
+</script>
+<body>
+hello world!!!
+<input type="text" id="message"/>
+<input type="button" id="sendBtn" value="发送" onclick="send()"/>
+</textarea>
+</body>
+</html>

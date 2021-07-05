@@ -1,0 +1,15 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+  mvc:
+    view:
+      suffix: .html
+      prefix: /pages/
+
+
+---
+spring:
+  redis:
+    port:
+  profiles: dev

@@ -1,0 +1,35 @@
+{
+  "configuration": {
+    "status": "error",
+    "name": "LogCfg",
+    "ThresholdFilter": {
+      "level": "trace"
+    },
+    "appenders": {
+      "Console": {
+        "name": "stdout",
+        "PatternLayout": {
+          "pattern": "%d{DEFAULT} [%t] %-5level %logger{36} [%X{traceId}/%X{spanId}] - %msg%n"
+        }
+      }
+    },
+    "loggers": {
+      "root": {
+        "level": "info",
+        "AppenderRef": {
+          "ref": "stdout"
+        }
+      },
+      "logger": [
+        {
+          "name": "io.grpc",
+          "level": "error",
+          "additivity": false,
+          "AppenderRef": {
+            "ref": "stdout"
+          }
+        }
+      ]
+    }
+  }
+}
