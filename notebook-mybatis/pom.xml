@@ -18,7 +18,7 @@
         <mybatis.version>3.5.5</mybatis.version>
         <mysql.version>8.0.15</mysql.version>
         <guava.version>19.0</guava.version>
-        <junit.version>4.10</junit.version>
+        <junit.version>4.13.1</junit.version>
     </properties>
 
     <dependencies>
