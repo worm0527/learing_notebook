@@ -6,4 +6,7 @@
 
     <bean id="userService" class="com.xsy.notebook.notebookspringboot.service.UserService" scope="singleton"/>
 
+    <bean id = "myBean" class="com.xsy.notebook.notebookspringboot.beans.MyBean"/>
+
+    <bean id = "user" class="com.xsy.notebook.notebookspringboot.pojo.User"/>
 </beans>

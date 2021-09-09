@@ -1,5 +1,6 @@
 package com.xsy.notebook.notebookspringboot;
 
+import com.xsy.notebook.notebookspringboot.beans.MyBean;
 import com.xsy.notebook.notebookspringboot.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -28,6 +29,13 @@ public class TestService {
         UserService userService = beanFactory.getBean("userService", UserService.class);
         userService.queryUserInfo(1000L);
         System.out.println("===============================");
+    }
+
+    @Test
+    public void testBean() {
+        BeanFactory beanFactory = new ClassPathXmlApplicationContext("spring-config.xml");
+        MyBean myBean = beanFactory.getBean("myBean", MyBean.class);
+        ((ClassPathXmlApplicationContext) beanFactory).registerShutdownHook();
     }
 
     @Test
